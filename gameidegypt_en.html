@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"
+        integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.6.0/qs.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Lato';
+            background-color: #eae8f7
+        }
+
+        h5 {
+            margin: 20px 0px 20px 0px;
+            font-family: 'Lato';
+            font-weight: bold;
+
+        }
+
+        img {
+            vertical-align: middle;
+            max-width: 30px;
+            width: 20px;
+            max-height: 100%;
+            margin: 0%;
+            padding-right: 2px;
+        }
+
+
+
+        .image:hover {
+
+            box-shadow: 50px blue;
+            transform: translateY(4px);
+
+        }
+
+        button {
+            padding: 2px;
+            margin: 0.5% 1% 0% 1%;
+            width: 48%;
+            max-width: 48%;
+            height: 50px;
+            font-size: 11px;
+            font-weight: bold;
+            border-radius: 10px;
+            border: 2px solid #6242FC;
+            -webkit-border-radius: 10px;
+            background-color: white;
+            font-family: 'Lato';
+        }
+
+        button:hover {
+            -webkit-box-shadow: 100px 600px 500px #ccc;
+            box-shadow: 2px 6px 5px #ccc;
+            -moz-box-shadow: 100px 600px 100px #ccc;
+            border: 5px solid #6242FC;
+            color: #6242FC;
+            border-radius: 10px;
+            -moz-border-radius: 10px;
+        }
+
+        .left {
+            float: left;
+        }
+
+        .right {
+            float: right;
+        }
+
+        button {
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <script type="text/javascript">
+
+        window.addEventListener('load', (event) => {
+
+            const { title } = Qs.parse(location.search, { ignoreQueryPrefix: true })
+        document.getElementById("heading").innerHTML = "Please choose the article below:" 
+    })
+        function back() {
+            window.parent.postMessage(
+                JSON.stringify({
+                    event_code: "ym-client-event",
+                    data: "@go-back"
+                }),
+                "*"
+            );
+        }
+
+        function Zepeto() {
+            window.parent.postMessage(
+                JSON.stringify({
+                    event_code: "ym-client-event",
+                    data: "Where Can I Find My Zepeto Username"
+                }),
+                "*"
+            );
+
+        }
+
+
+
+        function mlbb() {
+            window.parent.postMessage(
+                JSON.stringify({
+                    event_code: "ym-client-event",
+                    data: "Where Can I Find My Mobile Legends User ID "
+                }),
+                "*"
+            );
+
+        }
+
+         function Riot() {
+            console.log("how to redeem minecraft voucher ")
+            window.parent.postMessage(
+                JSON.stringify({
+                    event_code: "ym-client-event",
+                    data: "Where Can I Find My Legends Of Runeterra's Riot ID"
+                }),
+                "*"
+            );
+        }
+        function Turbo() {
+            console.log("how to redeem minecraft voucher ")
+            window.parent.postMessage(
+                JSON.stringify({
+                    event_code: "ym-client-event",
+                    data: "Where Can I Find My Turbo VPN ID"
+                }),
+                "*"
+            );
+        }
+        
+    </script>
+        
+        </script>
+        <div class = "image">
+        <img src="https://cdn.yellowmessenger.com/KseiGAPc8y401621566579976.jpeg" alt="" style="float: right;width:25px;height:25px;max-width: 40px;max-height: 40px;margin-right: 4px;" onclick="back()">
+        </div>
+            </br>
+            
+          <h5 id = "heading" style ="font-weight:bold" > Please choose the article below:</h5>
+    
+    
+    
+        <button type="button" onclick="Zepeto()" class="right primary-btn col-xs-11 text-left">
+            <img src="https://theme.zdassets.com/theme_assets/10201709/a4c4080630c43d8e6fcb2c1d044aab080f9f50d6.jpg" alt="Place Holder" /><span> Zepeto </span>
+        </button>
+    
+        <button type="button" onclick="mlbb()" class="left primary-btn col-xs-11 text-left">
+            <img src="https://theme.zdassets.com/theme_assets/10201709/7946c275246902b64a3e63cc01c7f763e656310e.jpg" alt="Place Holder" /><span>Mobile Legends</span>
+        </button>
+    
+    
+    
+        <button type="button" onclick="Riot()" class="left primary-btn col-xs-11 text-left">
+            <img src="https://theme.zdassets.com/theme_assets/10201709/46d3d14eea80940c98b3bf4a97112a48202a5de8.jpg" alt="Place Holder" /><span>Legends of Runeterra</span>
+            
+            
+        </button>
+        <button type="button" onclick="Turbo()" class="left primary-btn col-xs-11 text-left">
+            <img src="https://theme.zdassets.com/theme_assets/10201709/7653219c19c41ffebc188fe3990f4c4c2aabce4c.jpg" alt="Place Holder" /><span>Turbo VPN</span>
+            
+            
+        </button>
+    </button>
+    
+    </body>
+    </html>
